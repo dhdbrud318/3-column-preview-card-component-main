@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sedan-color: hsl(31, 77%, 52%);
+  --suvs-color: hsl(184, 100%, 22%);
+  --luxury-color: hsl(179, 100%, 13%);
+  --p-color: hsla(0, 0%, 100%, 0.75);
+  --bg-heading-btn-color: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  background-color: var(--bg-heading-btn-color);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 65%;
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  color: var(--bg-heading-btn-color);
+}
+
+p {
+  line-height: 1.5625rem;
+  width: 85%;
+  margin-bottom: 5.25rem;
+  color: var(--bg-heading-btn-color);
+}
+
+button {
+  line-height: 1.5rem;
+  padding: 0.625rem 2rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--bg-heading-btn-color);
+  transition: background-color 0.15s, color 0.15s, border 0.15s;
+}
+
+button:hover {
+  border: 1px solid var(--bg-heading-btn-color);
+}
+
+.container {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+
+section:nth-of-type(1) {
+  background-color: var(--sedan-color);
+}
+
+section:nth-of-type(1) button {
+  color: var(--sedan-color);
+}
+
+section:nth-of-type(1) button:hover {
+  background-color: var(--sedan-color);
+  color: var(--bg-heading-btn-color);
+}
+
+section:nth-of-type(2) {
+  background-color: var(--suvs-color);
+}
+
+section:nth-of-type(2) button {
+  color: var(--suvs-color);
+}
+
+section:nth-of-type(2) button:hover {
+  background-color: var(--suvs-color);
+  color: var(--bg-heading-btn-color);
+}
+
+section:nth-of-type(3) {
+  background-color: var(--luxury-color);
+}
+
+section:nth-of-type(3) button {
+  color: var(--luxury-color);
+}
+
+section:nth-of-type(3) button:hover {
+  background-color: var(--luxury-color);
+  color: var(--bg-heading-btn-color);
+}
+
+@media (max-width: 412px) {
+  main {
+    width: 88%;
+    flex-direction: column;
+  }
+
+  p {
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.attribution {
+  margin-top: 1.25rem;
+}
