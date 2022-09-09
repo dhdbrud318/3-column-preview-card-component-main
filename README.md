@@ -14,6 +14,8 @@ This challenge is to build out this 3-column preview card component and get it l
 
 mpletely free. Please share it with anyone who will find it useful for practice.
 
-##Created by
-Yoo keoung(Kate) Oh
+## Created by
+
+Yoo keoung (Kate) Oh
+
 instagram: [@yookeoungoh](https://www.instagram.com/yookeoungoh/)
