@@ -68,7 +68,7 @@ button:hover {
 
 .container {
   flex: 1;
-  padding: 2rem;
+  padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
